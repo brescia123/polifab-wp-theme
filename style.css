@@ -1,0 +1,365 @@
+/*!
+ Theme Name:   Twenty Twelve Child
+ Theme URI:    http://example.com/twentytwelve-child
+ Description:  Twenty Twelve Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentytwelve
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwelve-child
+*/
+/* Home Page */
+/* line 3, scss/_home.scss */
+#home-page-content {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+
+/* line 7, scss/_home.scss */
+.metaslider {
+  margin-right: 10px;
+  width: 70%;
+}
+
+/* line 11, scss/_home.scss */
+#home-page-text {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid RGBA(0, 117, 183, 1);
+  float: left;
+  width: 30%;
+  overflow: hidden;
+}
+/* line 17, scss/_home.scss */
+#home-page-text p {
+  margin: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* Main Menu */
+/* Desktop and Tablet */
+@media screen and (min-width: 480px) {
+  /* line 5, scss/_menu.scss */
+  .main-navigation {
+    margin: 0px;
+  }
+
+  /* line 8, scss/_menu.scss */
+  .menu-pages-menu-container {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 5px solid RGBA(0, 117, 183, 0.4);
+    border-top: 5px solid RGBA(0, 117, 183, 0.4);
+  }
+
+  /* line 13, scss/_menu.scss */
+  #menu-pages-menu {
+    max-width: 960px;
+    margin: 0 auto;
+    border: none;
+  }
+  /* line 17, scss/_menu.scss */
+  #menu-pages-menu ul.nav-menu, #menu-pages-menu .main-navigation div.nav-menu > ul {
+    text-align: center;
+  }
+  /* line 20, scss/_menu.scss */
+  #menu-pages-menu li {
+    margin-right: 10px;
+  }
+  /* line 22, scss/_menu.scss */
+  #menu-pages-menu li:last-child {
+    margin-right: 0px;
+  }
+  /* line 26, scss/_menu.scss */
+  #menu-pages-menu li a {
+    color: white;
+    background-color: RGBA(0, 117, 183, 1);
+    text-align: center;
+    width: 180px;
+  }
+  /* line 31, scss/_menu.scss */
+  #menu-pages-menu li a:hover, #menu-pages-menu li a:focus {
+    color: white;
+  }
+  /* line 36, scss/_menu.scss */
+  #menu-pages-menu li ul li a {
+    text-align: left;
+    color: white;
+    background-color: RGBA(0, 117, 183, 0.7);
+    border-bottom: 0px;
+  }
+  /* line 41, scss/_menu.scss */
+  #menu-pages-menu li ul li a:hover, #menu-pages-menu li ul li a:focus {
+    color: white;
+    background-color: RGBA(0, 117, 183, 0.9);
+  }
+}
+/* Contact Page*/
+/* line 3, scss/_contact.scss */
+.contact-page {
+  width: 100%;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* line 10, scss/_contact.scss */
+.contact-page-content {
+  max-width: 400px;
+}
+
+/* Equipments summary page */
+/* line 3, scss/_equipments.scss */
+.content-equip-summ article {
+  margin-bottom: 0px;
+}
+
+/*.Equipment */
+/* line 3, scss/_equipment.scss */
+.equip-content {
+  display: block;
+}
+
+/* line 6, scss/_equipment.scss */
+.equip-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* line 16, scss/_equipment.scss */
+.equip-middle {
+  margin-bottom: 20px;
+}
+
+/* line 19, scss/_equipment.scss */
+.equip-bottom {
+  margin-bottom: 20px;
+}
+
+/* line 22, scss/_equipment.scss */
+#equip-img {
+  margin-right: 20px;
+}
+
+/* line 26, scss/_equipment.scss */
+.equip-sub-elem #short-desc {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+/* line 30, scss/_equipment.scss */
+.equip-sub-elem div {
+  text-align: left;
+  overflow: hidden;
+}
+/* line 34, scss/_equipment.scss */
+.equip-sub-elem label {
+  font-weight: 600;
+  text-transform: uppercase;
+  float: left;
+  width: 130px;
+}
+
+/* line 41, scss/_equipment.scss */
+.equip-top .equip-sub-elem div {
+  max-width: 320px;
+}
+
+/* line 44, scss/_equipment.scss */
+.equip-bottom .equip-sub-elem label {
+  float: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 48, scss/_equipment.scss */
+  .equip-elem label {
+    float: none;
+  }
+
+  /* line 51, scss/_equipment.scss */
+  .equip-elem {
+    margin-bottom: 20px;
+  }
+}
+/* Equipments list */
+/* line 3, scss/_equipment_list.scss */
+.equipment-list {
+  line-height: 2;
+  margin: 50px auto;
+  border-left: 2px solid RGBA(0, 117, 183, 1);
+}
+
+/* line 9, scss/_equipment_list.scss */
+.category h4 {
+  text-decoration: none;
+  cursor: pointer;
+  color: RGBA(0, 117, 183, 1);
+  padding-left: 10px;
+}
+/* line 15, scss/_equipment_list.scss */
+.category .sublist {
+  display: none;
+}
+/* line 17, scss/_equipment_list.scss */
+.category .sublist ul {
+  font-size: 13px;
+  line-height: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+  padding: 0px;
+}
+/* line 24, scss/_equipment_list.scss */
+.category .sublist li {
+  color: RGBA(0, 117, 183, 1);
+  padding-left: 30px;
+}
+/* line 27, scss/_equipment_list.scss */
+.category .sublist li a {
+  text-decoration: none;
+}
+/* line 30, scss/_equipment_list.scss */
+.category .sublist li.active {
+  border-left: 2px solid RGBA(0, 117, 183, 1);
+  background-color: RGBA(0, 117, 183, 0.1);
+}
+/* line 34, scss/_equipment_list.scss */
+.category .sublist li:hover {
+  background-color: RGBA(0, 117, 183, 0.1);
+}
+/* line 38, scss/_equipment_list.scss */
+.category .sublist h4:hover {
+  background-color: RGBA(0, 117, 183, 0.1);
+}
+/* line 42, scss/_equipment_list.scss */
+.category a:hover {
+  color: RGBA(0, 117, 183, 1);
+}
+
+/* line 46, scss/_equipment_list.scss */
+i.fa.fa-caret-right {
+  margin-right: 8px;
+}
+
+/* line 49, scss/_equipment_list.scss */
+.fa-rotate-90 {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* Footer */
+/* line 3, scss/_footer.scss */
+.site-content article {
+  border-bottom: none;
+}
+
+/* line 33, scss/style.scss */
+.page {
+  color: RGBA(0, 117, 183, 1);
+}
+
+/* Resetting the chrome css */
+/* line 38, scss/style.scss */
+ul, menu, div {
+  --webkit-padding-start: 0px;
+  --webkit-margin-before: 0px;
+  --webkit-margin-after: 0px;
+}
+
+/* line 43, scss/style.scss */
+body {
+  background-color: white;
+}
+
+/* Remove layout margins */
+/* line 48, scss/style.scss */
+#page.site {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+  box-shadow: none;
+}
+
+/* line 55, scss/style.scss */
+#main.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+/* line 60, scss/style.scss */
+#masthead.site-header {
+  padding: 0;
+}
+
+/* line 63, scss/style.scss */
+#masthead.site-header hgroup {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 67, scss/style.scss */
+h1.site-title {
+  line-height: 0;
+}
+
+/* line 70, scss/style.scss */
+h2.site-description {
+  display: none;
+}
+
+/* line 73, scss/style.scss */
+#colophon {
+  max-width: none;
+  border-top: 5px solid RGBA(0, 117, 183, 0.4);
+}
+
+/* line 77, scss/style.scss */
+footer #footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 82, scss/style.scss */
+h2 {
+  display: inline-block;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: white;
+  background-color: RGBA(0, 117, 183, 0.4);
+}
+
+/* Page Title */
+/* line 95, scss/style.scss */
+h1.entry-title {
+  text-transform: uppercase;
+  font-size: 2.5em !important;
+  color: RGBA(0, 117, 183, 1);
+}
+
+/* line 100, scss/style.scss */
+.entry-title::first-letter {
+  color: white;
+  background-color: RGBA(0, 117, 183, 0.4);
+  padding: 0.1em;
+}

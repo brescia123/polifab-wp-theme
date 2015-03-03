@@ -1,0 +1,104 @@
+/*!
+ Theme Name:   Twenty Twelve Child
+ Theme URI:    http://example.com/twentytwelve-child
+ Description:  Twenty Twelve Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentytwelve
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwelve-child
+*/
+
+
+$blu-main: RGBA(0, 117, 183, 1);
+$blu-main-90: RGBA(0, 117, 183, 0.9);
+$blu-main-70: RGBA(0, 117, 183, 0.7);
+$blu-main-40: RGBA(0, 117, 183, 0.4);
+$blu-main-10: RGBA(0, 117, 183, 0.1);
+
+$main-max-width: 960px;
+
+@import "compass/css3/flexbox";
+@import "compass/css3";
+
+@import "home";
+@import "menu";
+@import "contact";
+@import "equipments";
+@import "equipment";
+@import "equipment_list";
+@import "footer";
+
+.page {
+    color: $blu-main;
+}
+/* Resetting the chrome css */
+
+ul, menu, div {
+    --webkit-padding-start: 0px;
+    --webkit-margin-before: 0px;
+    --webkit-margin-after: 0px;
+}
+body {
+    background-color: white;
+}
+/* Remove layout margins */
+
+#page.site {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    box-shadow: none;
+}
+#main.wrapper {
+    max-width: $main-max-width;
+    margin: 0 auto;
+    min-height: 400px;
+}
+#masthead.site-header {
+    padding: 0;
+}
+#masthead.site-header hgroup {
+    max-width: $main-max-width;
+    margin: 0 auto;
+}
+h1.site-title {
+    line-height: 0;
+}
+h2.site-description {
+    display: none;
+}
+#colophon {
+    max-width: none;
+    border-top: 5px solid $blu-main-40;
+}
+footer #footer-content {
+    max-width: $main-max-width;
+    margin: 0 auto;
+}
+
+h2 {
+    display: inline-block;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+    background-color: $blu-main-40;
+}
+
+/* Page Title */
+
+h1.entry-title {
+    text-transform: uppercase;
+    font-size: 2.5em !important;
+    color: $blu-main;
+}
+.entry-title::first-letter {
+    color: white;
+    background-color: $blu-main-40;
+    padding: 0.1em;
+}

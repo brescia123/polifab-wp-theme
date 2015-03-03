@@ -1,0 +1,22 @@
+/* Home Page */
+
+#home-page-content {
+    @include display-flex;
+    height: 100%;
+}
+.metaslider {
+    margin-right: 10px;
+    width: 70%;
+}
+#home-page-text {
+    @include box-sizing(border-box);
+    border: 2px solid $blu-main;
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    p {
+        margin: 20px;
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+}

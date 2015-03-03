@@ -1,0 +1,48 @@
+/* Main Menu */
+/* Desktop and Tablet */
+
+@media screen and (min-width: 480px) {
+    .main-navigation {
+        margin: 0px;
+    }
+    .menu-pages-menu-container {
+        @include box-sizing(border-box);
+        border-bottom: 5px solid $blu-main-40;
+        border-top: 5px solid $blu-main-40;
+    }
+    #menu-pages-menu {
+        max-width: $main-max-width;
+        margin: 0 auto;
+        border: none;
+        ul.nav-menu, .main-navigation div.nav-menu > ul {
+            text-align: center;
+        }
+        li {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            // First level items
+            a {
+                color: white;
+                background-color: $blu-main;
+                text-align: center;
+                width: 180px;
+                &:hover, &:focus {
+                    color: white;
+                }
+            }
+            // Second level items
+            ul li a {
+                text-align: left;
+                color: white;
+                background-color: $blu-main-70;
+                border-bottom: 0px;
+                &:hover, &:focus {
+                    color: white;
+                    background-color: $blu-main-90;
+                }
+            }
+        }
+    }
+}

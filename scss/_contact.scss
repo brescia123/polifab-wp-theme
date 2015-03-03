@@ -1,0 +1,12 @@
+/* Contact Page*/
+
+.contact-page {
+    width: 100%;
+    @include display-flex(inline-flex);
+    @include flex-wrap(wrap);
+    @include align-items(flex-start);
+    @include justify-content(space-between);
+}
+.contact-page-content {
+    max-width: 400px;
+}

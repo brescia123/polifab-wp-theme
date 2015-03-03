@@ -1,0 +1,51 @@
+/* Equipments list */
+
+.equipment-list {
+    line-height: 2;
+    margin: 50px auto;
+    border-left: 2px solid $blu-main;
+}
+.category {
+    h4 {
+        text-decoration: none;
+        cursor: pointer;
+        color: $blu-main;
+        padding-left: 10px;
+    }
+    .sublist {
+        display: none;
+        ul {
+            font-size: 13px;
+            line-height: 30px;
+            padding-left: 10px;
+            overflow: hidden;
+            padding: 0px;
+        }
+        li {
+            color: $blu-main;
+            padding-left: 30px;
+            a {
+                text-decoration: none;
+            }
+            &.active {
+                border-left: 2px solid $blu-main;
+                background-color: $blu-main-10;
+            }
+            &:hover {
+                background-color: $blu-main-10;
+            }
+        }
+        h4:hover {
+            background-color: $blu-main-10;
+        }
+    }
+    a:hover {
+        color: $blu-main;
+    }
+}
+i.fa.fa-caret-right {
+    margin-right: 8px;
+}
+.fa-rotate-90 {
+    @include rotate(90deg);
+}
