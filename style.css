@@ -131,6 +131,11 @@
 }
 
 /* line 6, scss/_equipment.scss */
+#equip-img {
+  margin-right: 20px;
+}
+
+/* line 9, scss/_equipment.scss */
 .equip-top {
   display: -webkit-box;
   display: -moz-box;
@@ -141,33 +146,37 @@
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
-/* line 16, scss/_equipment.scss */
-.equip-middle {
-  margin-bottom: 20px;
-}
-
-/* line 19, scss/_equipment.scss */
-.equip-bottom {
-  margin-bottom: 20px;
+/* line 18, scss/_equipment.scss */
+.equip-top .equip-sub-elem div {
+  max-width: 320px;
 }
 
 /* line 22, scss/_equipment.scss */
-#equip-img {
-  margin-right: 20px;
+.equip-middle {
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 /* line 26, scss/_equipment.scss */
+.equip-bottom {
+  margin-bottom: 20px;
+}
+/* line 28, scss/_equipment.scss */
+.equip-bottom .equip-sub-elem label {
+  float: none;
+}
+
+/* line 33, scss/_equipment.scss */
 .equip-sub-elem #short-desc {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-/* line 30, scss/_equipment.scss */
+/* line 37, scss/_equipment.scss */
 .equip-sub-elem div {
   text-align: left;
   overflow: hidden;
 }
-/* line 34, scss/_equipment.scss */
+/* line 41, scss/_equipment.scss */
 .equip-sub-elem label {
   font-weight: 600;
   text-transform: uppercase;
@@ -175,23 +184,13 @@
   width: 130px;
 }
 
-/* line 41, scss/_equipment.scss */
-.equip-top .equip-sub-elem div {
-  max-width: 320px;
-}
-
-/* line 44, scss/_equipment.scss */
-.equip-bottom .equip-sub-elem label {
-  float: none;
-}
-
 @media only screen and (max-width: 768px) {
-  /* line 48, scss/_equipment.scss */
+  /* line 49, scss/_equipment.scss */
   .equip-elem label {
     float: none;
   }
 
-  /* line 51, scss/_equipment.scss */
+  /* line 52, scss/_equipment.scss */
   .equip-elem {
     margin-bottom: 20px;
   }

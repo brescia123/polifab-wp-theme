@@ -3,6 +3,9 @@
 .equip-content {
     display: block;
 }
+#equip-img {
+    margin-right: 20px;
+}
 .equip-top {
     display: -webkit-box;
     display: -moz-box;
@@ -12,15 +15,19 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    .equip-sub-elem div {
+        max-width: 320px;
+    }
 }
 .equip-middle {
     margin-bottom: 20px;
+    display: inline-block;
 }
 .equip-bottom {
     margin-bottom: 20px;
-}
-#equip-img {
-    margin-right: 20px;
+    .equip-sub-elem label {
+        float: none;
+    }
 }
 .equip-sub-elem {
     #short-desc {
@@ -37,12 +44,6 @@
         float: left;
         width: 130px;
     }
-}
-.equip-top .equip-sub-elem div {
-    max-width: 320px;
-}
-.equip-bottom .equip-sub-elem label {
-    float: none;
 }
 @media only screen and (max-width: 768px) {
     .equip-elem label {
