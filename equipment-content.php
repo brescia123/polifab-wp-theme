@@ -43,48 +43,74 @@ post_class(); ?>>
 
 					?>
 				</div>
-				<div class="equip-sub-elem"\>
-					<div class="equip-sub-elem" id="short-desc">
-						<?php the_field('short_description'); ?>
-					</div>		
-					<div class="equip-sub-elem">
-						<label>Manufacturer:</label>
-						<div><?php the_field('manufacturer'); ?></div>
-					</div>
-					<div class="equip-sub-elem">
-						<label>Website:</label>
-						<div><a href="<?php the_field('website'); ?>"><?php the_field('website'); ?></a></div>
-					</div>
-					<div class="equip-sub-elem">
-						<label>Year:</label>
-						<div><?php the_field('year'); ?></div> 
-					</div>
-					<div class="equip-sub-elem">
-						<label>Condition:</label>
-						<div><?php the_field('condition'); ?></div>
-					</div>
+				<div class="equip-sub-elem">	
+					<?php 
+					if( get_field('short_description') ):
+						echo '<div class="equip-sub-elem" id="short-desc">';
+						echo '<label></label><div>';
+						the_field('short_description'); 
+						echo '</div></div>';
+					endif
+					?>			
+					<?php 
+					if( get_field('manufacturer') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>Manufacturer:</label><div>';
+						the_field('manufacturer'); 
+						echo '</div></div>';
+					endif
+					?>		
+					<?php 
+					if( get_field('website') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>Website:</label><div>';
+						echo '<a href="'; the_field('website'); echo '">'; the_field('website'); echo '</a>';
+						echo '</div></div>';
+					endif
+					?>		
+					<?php 
+					if( get_field('year') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>ear:</label><div>';
+						the_field('year'); 
+						echo '</div></div>';
+					endif
+					?>		
+					<?php 
+					if( get_field('condition') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>Condition:</label><div>';
+						the_field('condition'); 
+						echo '</div></div>';
+					endif
+					?>
+					<?php 
+					if( get_field('referee') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>Referee:</label><div>';
+						the_field('referee'); 
+						echo '</div></div>';
+					endif
+					?>
+					<?php 
+					if( get_field('access') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>Access:</label><div>';
+						the_field('access'); 
+						echo '</div></div>';
+					endif
+					?>
+					<?php 
+					if( get_field('location') ):
+						echo '<div class="equip-sub-elem">';
+						echo '<label>Location:</label><div>';
+						the_field('location'); 
+						echo '</div></div>';
+					endif
+					?>
 				</div>
 			</div>
 			<div class="equip-elem equip-middle">		
-				<div class="equip-sub-elem">
-					<label>Referee:</label>
-					<div><?php the_field('referee'); ?></div></div>
-				<div class="equip-sub-elem">
-					<label>Access:</label>
-					<div><?php the_field('access'); ?></div>
-				</div>
-				<div class="equip-sub-elem">
-					<label>Location:</label>
-					<div><?php the_field('location'); ?></div>
-				</div>
-				<?php 
-				if( get_field('location') ):
-					echo '<div class="equip-sub-elem">';
-					echo '<label>Location:</label><div>';
-					the_field('location'); 
-					echo '</div></div>';
-				endif
-				?>
 			</div>
 			<div class="equip-elem equip-bottom">			
 				<?php 
