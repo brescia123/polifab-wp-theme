@@ -90,6 +90,14 @@ h2 {
     background-color: $blu-main-40;
 }
 
+.entry-content a {
+    color: $blu-main;
+}
+
+.entry-content a:visited {
+    color: $blu-main;
+}
+
 /* Page Title */
 
 h1.entry-title {

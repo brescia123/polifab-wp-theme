@@ -124,6 +124,17 @@
   margin-bottom: 0px;
 }
 
+/* line 7, scss/_equipments.scss */
+#equipment-summary-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 12, scss/_equipments.scss */
+#equipment-summary-list ul {
+  min-width: 50%;
+}
+
 /*.Equipment */
 /* line 3, scss/_equipment.scss */
 .equip-content {
@@ -348,15 +359,25 @@ h2 {
   background-color: RGBA(0, 117, 183, 0.4);
 }
 
+/* line 93, scss/style.scss */
+.entry-content a {
+  color: RGBA(0, 117, 183, 1);
+}
+
+/* line 97, scss/style.scss */
+.entry-content a:visited {
+  color: RGBA(0, 117, 183, 1);
+}
+
 /* Page Title */
-/* line 95, scss/style.scss */
+/* line 103, scss/style.scss */
 h1.entry-title {
   text-transform: uppercase;
   font-size: 2.5em !important;
   color: RGBA(0, 117, 183, 1);
 }
 
-/* line 100, scss/style.scss */
+/* line 108, scss/style.scss */
 .entry-title::first-letter {
   color: white;
   background-color: RGBA(0, 117, 183, 0.4);

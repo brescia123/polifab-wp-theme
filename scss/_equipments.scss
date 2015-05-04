@@ -3,3 +3,13 @@
 .content-equip-summ article {
     margin-bottom: 0px;
 }
+
+#equipment-summary-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	ul {
+		min-width: 50%;
+	}
+}
